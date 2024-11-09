@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Datos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f8ff; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+        .form-container {
+            background-color: #ffffff; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px; 
+        }
+
+        h2 {
+            text-align: center;
+            color: #333; 
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555; 
+        }
+
+        input[type="text"] {
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 15px;
+            border: 1px solid #ccc; 
+            border-radius: 4px;
+            box-sizing: border-box; 
+        }
+
+        button {
+            width: 100%;
+            padding: 10px; 
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Guardar Datos</h2>
+    <form action="datos_persona.php" name="base_imc" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" name="txt_nombre" required>
+
+        <label for="apellidoPaterno">Apellido Paterno:</label>
+        <input type="text" name="txt_apellidoPaterno" required>
+
+        <label for="apellidoMaterno">Apellido Materno:</label>
+        <input type="text" name="txt_apellidoMaterno" required>
+
+        <label for="edad">Edad:</label>
+        <input type="text" name="txt_edad" required>
+
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="text" name="txt_fechaNacimiento" required>
+
+        <label for="sexo">Sexo:</label>
+        <input type="text" name="txt_sexo" required>
+
+        <button type="submit" value="Enviar">Enviar</button>
+
+        <a href="imc_dieta.html" class="button">Sigiente página</a>
+        <br>
+        <a href="test.html" class="button">volver al inicio</a>
+    </br>
+    </form>
+</div>
+
+</body>
+</html>
